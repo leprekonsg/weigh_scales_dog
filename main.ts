@@ -24,7 +24,7 @@ basic.forever(function () {
     if (motion == 1) {
         basic.showNumber(_var)
         radio.sendValue("W0", _var)
-        for (let index = 0; index < 51; index++) {
+        for (let index = 0; index < 50; index++) {
             basic.pause(1000)
             radio.sendValue("W0", _var)
         }
