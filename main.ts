@@ -26,6 +26,8 @@ basic.forever(function () {
         radio.sendValue("W0", _var)
         for (let index = 0; index < 50; index++) {
             basic.pause(1000)
+            _var = SGBotic.read_grams(
+            )
             radio.sendValue("W0", _var)
         }
     } else {
